@@ -33,10 +33,10 @@
             </h4>
             <br>
             <span id="user">
-              <input name="user" type="text" placeholder="USERNAME" />
+              <input name="user" type="text" placeholder="USERNAME" id="username"/>
             </span>
             <span id="pass">
-              <input name="pass" type="password" placeholder="PASSWORD" />
+              <input name="pass" type="password" placeholder="PASSWORD" id="password" />
             </span>
             <br>
           </td>
@@ -45,7 +45,7 @@
         <tr>
           <td width="25%">&nbsp;</td>
 
-          <td>
+          <td (click)="loginuser()">
             <input
               name=""
               type="submit"
