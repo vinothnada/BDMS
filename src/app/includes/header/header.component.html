@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta -->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- End of meta -->
+
+  <!-- Title -->
+  <title>BDMS- Blood Donor Management System</title>
+  <!-- End of title -->
+
+  <!-- Google Web Fonts -->
+  <link
+    href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic&amp;subset=latin,latin-ext"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <!-- End of Google Web Fonts -->
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="top container">
+      <!-- Logo area -->
+      <div class="logo-left-bg"></div>
+      <div class="logo-left one-fourth">
+        <!-- Logo -->
+        <a class="logo">BDMS<span>Blood Donor Management System </span></a>
+        <!-- End of logo -->
+      </div>
+      <!-- End of logo area -->
+      <!-- Top right -->
+      <div class="top-right three-fourth last-in-row">
+        <!-- Top bar -->
+        <div class="top-bar">
+          <!-- Search box -->
+          <div class="search-box">
+            <form action="" method="get">
+              <input
+                id="suggestBox2"
+                type="text"
+                name="search"
+                onFocus="if (this.value == 'Search for Blood? Enter Zip code/City/Blood Group') {this.value = '';}"
+                onBlur="if (this.value == '') {this.value = 'Search for Blood? Enter Zip code/City/Blood Group';}"
+                value="Search for Blood? Enter Zip code/City/Blood Group"
+              />
+              <button class="input-submit" type="submit">
+                <i class="icon-search"></i>
+              </button>
+            </form>
+          </div>
+          <div id="login" (click)="goToPage('signin')">
+            <a class="button-outline blue"><strong>Sign In</strong></a>
+          </div>
+          <!-- End of search box -->
+          <!-- Social icons -->
+          <div class="top-social-icons">
+            <ul class="footer-social social-icons">
+              <li>
+                <a href="#"><i class="icon-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icon-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icon-linkedin"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icon-google-plus"></i></a>
+              </li>
+            </ul>
+          </div>
+          <!-- End of social icons-->
+        </div>
+        
+      </div>
+      <!-- End of top right -->
+    </div>
+  </header>
+  <!-- End of header -->
+</body>
+</html>

@@ -1,0 +1,91 @@
+<app-header></app-header>
+<div style="height: 200px"></div>
+<div id="content" class="clearfix">
+  <!-- Breadcumbs -->
+  <div class="breadcumbs">
+    <div class="container">
+      <a href="#">Home page</a> <a class="current" href="#">Sign In</a>
+    </div>
+  </div>
+  <!-- End of breadcumbs -->
+  <div class="container">
+    <hr class="sep40" />
+    <!-- Sidebar -->
+    <app-leftsidebar></app-leftsidebar>
+    <!-- End of sidebar -->
+    <!-- Main -->
+    <div id="main" class="three-fourth last-in-row">
+      <h2><strong>Sign In</strong></h2>
+      <p>
+        Our Blood Donor Community makes it easier for you to view your donation
+        history, find convenient blood drives, and manage your contact
+        preferences. If you have not done so already, you will need to
+        <a href="#">register in our Donor Community</a>.
+      </p>
+
+      <table width="100%" border="0" align="center">
+        <tr>
+          <td width="25%">&nbsp;</td>
+          <td width="75%" height="120">
+            <h4>
+              <span class="icon-pencil"></span
+              ><strong> Blood Donor Community Sign In</strong>
+            </h4>
+            <br>
+            <span id="user">
+              <input name="user" type="text" placeholder="USERNAME" />
+            </span>
+            <span id="pass">
+              <input name="pass" type="password" placeholder="PASSWORD" />
+            </span>
+            <br>
+          </td>
+        </tr>
+        <tr></tr>
+        <tr>
+          <td width="25%">&nbsp;</td>
+
+          <td>
+            <input
+              name=""
+              type="submit"
+              class="button-outline blue"
+              value="SIGN IN"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td width="25%">&nbsp;</td>
+
+          <td>
+            <ul class="">
+              <li>
+                <div (click)="goToPage('registration')"><i class="icon-arrow-right"></i>  Register in our Donor Community</div>
+              </li>
+              <li>
+                <i class="icon-arrow-right"></i>
+                <a href="#">Forget password or username</a>
+              </li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+      <script type="text/javascript">
+        var sprytextfield7 = new Spry.Widget.ValidationTextField(
+          "user",
+          "none",
+          { validateOn: ["blur"] }
+        );
+        var sprytextfield8 = new Spry.Widget.ValidationTextField(
+          "pass",
+          "none",
+          { validateOn: ["blur"] }
+        );
+      </script>
+      <img src="../../../assets/images/projects/banner2.jpg" />
+    </div>
+    <!-- End of main -->
+    <hr class="sep40" />
+  </div>
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,233 @@
+<app-header></app-header>
+<div style="height: 200px"></div>
+<div id="content" class="clearfix">
+  <!-- Breadcumbs -->
+  <div class="breadcumbs">
+    <div class="container"> <a href="#">Home page</a> <a class="current" href="#">Profile</a> </div>
+  </div>
+  <!-- End of breadcumbs -->
+  <div class="container">
+    <hr class="sep40" />
+    <!-- Sidebar -->
+	<app-left-sidebar-community></app-left-sidebar-community>
+    
+    <!-- End of sidebar -->
+    <!-- Main -->
+    <div id="main" class="three-fourth last-in-row">
+      <div class="tabs">
+        <ul class="nav-tabs">
+          <li><div (click)="openTab('one','two')" >Overview</div></li>
+          <li><div (click)="openTab('two','one')" >Edit account</div></li>
+        </ul>
+        <div class="tab-content">
+          <div id="one">
+            <div class="profile overview">
+              <div class="innerLR">
+                <div class="row-fluid ">
+                  <div class="alert alert-warning"><strong>Warning!</strong> Please Complite Your Account Information...! </div>
+                  <div class="span7">
+                    <!-- About -->
+                    <div class="widget widget-heading-simple widget-body-white margin-none">
+                      <div class="widget-head">
+                        <h4 class="heading glyphicons user"><i></i>Bruce Wayne</h4>
+                      </div>
+                      <div class="widget-body">
+                        <p>Extra user information</p>
+                      </div>
+                    </div>
+                    <!-- // About END -->
+                  </div>
+                  <div class="span5">
+                    <!-- Bio -->
+                    <div class="widget widget-heading-simple widget-body-white margin-none">
+                      <div class="widget-head">
+                        <h4 class="heading glyphicons calendar"><i></i>Bio <span>Personal information</span></h4>
+                      </div>
+                      <div class="widget-body">
+                        <ul class="unstyled icons margin-none">
+						              15-5-1998
+                          <li class="glyphicons birthday_cake"><i></i> <span class="label">15</span> <span class="label">5</span> <span class="label">1998</span></li>
+                          <li class="glyphicons tie"><i></i> Working at <a >Central Bank OF Srilanka</a></li>
+                          <li class="glyphicons certificate"><i></i> Finance Officer</li>
+                          <li class="glyphicons book"><i></i> Colombo COllege </li>
+                          <li class="glyphicons iphone"><i></i> +94758965874 </li>
+                          <li class="glyphicons home"><i></i> Colombo - SriLanka </li>
+                          <li class="glyphicons tint"><i></i> B+ </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- // Bio END -->
+                  </div>
+                </div>
+                <div class="row-fluid">
+                  <div class="span7">
+                    <!-- Latest Orders/List Widget -->
+                    <div class="widget widget-heading-simple widget-body-gray" data-toggle="collapse-widget" data-collapse-closed="false">
+                      <!-- Widget Heading -->
+                      <div class="widget-head">
+                        <h4 class="heading glyphicons history"><i></i>Last Activity</h4>
+                      </div>
+                      <!-- // Widget Heading -->
+                      <div class="widget-body list activity in collapse" style="height: auto;">
+                        <ul>
+						<li>LAst acriti1</li>
+						<li>LAst acriti2</li>
+						<li>LAst acriti3</li>
+						 </ul>
+                      </div>
+                    </div>
+                    <!-- // Latest Orders/List Widget END -->
+                  </div>
+                  <div class="span5">
+                    <div class="widget widget-heading-simple widget-body-gray" data-toggle="collapse-widget">
+                      <!-- Widget Heading -->
+                      <div class="widget-head">
+                        <h4 class="heading glyphicons pin_flag"><i></i>Upcoming Events</h4>
+                      </div>
+                      <!-- // Widget Heading END -->
+                      <div class="widget-body list collapse in profil_inbox">
+                        <ul>
+                          <li>Event 1</li>
+                          <li>Event 2</li>
+                          <li>Event 3</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+         <div id="two" >
+    <table width="100%" border="0" align="center" >
+              <tr>
+                <td width="55%" height="288"><h4><span class="icon-user"></span><strong> Personal information</strong></h4>
+                  <label >Title</label>
+                  <span id="title">
+                  <select name="title">
+                    <option> - Select Your Title - </option>
+                    <option value="Mr" selected="selected">Mr</option>
+                    <option value="Ms" >Ms</option>
+                  </select>
+                  
+                  </span>
+                  <label >First Name</label>
+                  <span id="fname">
+                  <input name="fname" id="fname" type="text" value="Bruce">
+                  
+                  </span>
+                  <label >Last Name</label>
+                  <span id="lanme">
+                  <input name="lname" id="lname" type="text" value="Wayne">
+                  </span>
+                  <label >Gender</label>
+                  <span id="Gender">
+                  <select name="gender">
+                    <option value="Male" selected="selected">Male</option>
+                    <option value="Female" >Female</option>
+				    </select>
+                  </span>
+                  <label> Birth Day</label>
+                  <span id="dob">
+                  <input name="dob" type="text" autocomplete="off" value="12.10.1980">
+                  </span>
+                  <label>Blood Type</label>
+                  <span id="bloodtype">
+                  <select name="bloodtype" id="bloodtype">
+					          <option selected="selected" value="0">SELECT BLOOD TYPE</option>
+                    <option value="A+" selected="selected">A+</option>
+                    <option value="B+" selected="selected">B+</option>
+                    <option value="C+" selected="selected">C+</option>
+                    <option value="D+" selected="selected">D+</option>
+                  </select>
+                  </span>
+                  <label >Working at</label>
+                  <span id="work">
+                  <input name="work" id="work" type="text" value="">
+                  </span>
+                  <label >Job Position</label>
+                  <span id="job">
+                  <input name="job" id="job" type="text" value="">
+                  </span>
+                  <label >School</label>
+                  <span id="School">
+                  <input name="School" id="School" type="text" value="">
+                  </span> 
+				  <label >About Me</label>
+                  <span id="School">
+                  <textarea name="about" style="height:120px"></textarea>
+                  </span>
+				   <hr class="sep20" />
+				  
+                  <h4><span class="icon-phone"></span><strong> Contact information</strong></h4>
+                  <label >City</label>
+                  <span id="city">
+                  <input name="city" type="text"  value="">
+                  </span>
+                  <label>ZIP Code</label>
+                  <input name="zip" type="text" value="">
+				  <label>Phone</label>
+                  <span id="email">
+                  <input id="phone" name="phone" type="text" value=">" placeholder="0123456789">
+                  </span>
+                  <label>Email</label>
+                  <span id="email">
+                  <input id="email" name="email" type="text" value="">
+                  </span> </td>
+                <td width="45%">
+				<h4><span class="icon-smile"></span><strong> Profile Picture</strong></h4>
+                  <span class="center"><img src="" width="100" height="100"></span><br />
+
+                  <span id="user">
+                  <input name="propic" type="file" /> <br />
+					<em>maximum limit 300x300px/1Mb</em>
+                  </span>
+				  <hr class="sep20" />
+				<h4><span class="icon-unlock-alt"></span><strong> Login information</strong></h4>
+                  <label>Username</label>
+                  <span id="user">
+                  <input name="user" type="text" value="">
+                  </span>
+                  <label>Password</label>
+                  <span id="pass">
+                  <input name="pass" type="password" >
+                  </span>
+                  <label>New Password</label>
+                  <span id="newpassword">
+                  <input name="newpassword" type="password" >
+                  </span>
+				   <hr class="sep20" /> 
+				  <h4><span class="icon-globe"></span><strong> Social  Links</strong></h4>
+				  <label>Personel Website</label>
+                  <span id="web">
+                  <input name="web" id="web" type="text" placeholder="http://www.example.com" value="">
+                  </span>
+                  <label>Facebook</label>
+                  <span id="Facebook">
+                  <input name="facebook" id="facebook" type="text" placeholder="FBusernme or Id" value="">
+                  </span>
+                  <label>Linkedin</label>
+                  <span id="linkedin">
+                  <input name="linkedin" id="linkedin" type="text" placeholder="Linkedin Id" value="">
+                  </span>
+                  <label>Google +</label>
+                  <span id="google">
+                  <input name="google" id="google" type="text" placeholder="G+ Account Id" value="">
+                  </span>
+				  </td>
+              </tr>
+              <tr>
+                <td colspan="2"><input name="" type="submit" class="button-outline blue" value="UPDATE"></td>
+              </tr>
+            </table>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- End of main -->
+    <hr class="sep40" />
+  </div>
+</div>
+<app-footer></app-footer>
